@@ -40,12 +40,11 @@ const power = function (num1, num2) {
 console.log("power", power(4, 3));
 
 const factorial = function (num) {
+  if (num === 0) return 1;
+
   let numArr = [];
 
   for (let i = 1; i <= num; i++) {
-    if (!numArr) {
-      numArr.push(1);
-    }
     numArr.push(i);
   }
 
